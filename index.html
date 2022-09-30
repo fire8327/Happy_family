@@ -27,26 +27,27 @@
   <header class="flex flex-row bg-orange-400 items-center text-center py-2 justify-around text-white">
     <div class="flex flex-row items-center">
       <img class="w-20 rounded-3xl" src="Assets/img/logo.jpg" alt="Логотип">
-      <h1 class="m-4">Профессиональный труд на благое дело. Окажем любую консультационную помощь</h1>
+      <h1 class="lg:m-4 m-2 hidden lg:block">Профессиональный труд на благое дело. Окажем любую консультационную помощь</h1>
     </div>
-    <div class="flex flex-row">
-      <a class="m-4" href="">Авторизация</a>
-      <a class="m-4" href="">Запись на коснультацию</a>
+    <div class="flex flex-row items-center">
+      <a class="lg:m-4 m-2 hidden lg:block text-white hover:text-gray-700" href="">Авторизация</a>
+      <a class="lg:m-4 m-2 hidden lg:block text-white hover:text-gray-700" href="">Запись на коснультацию</a>
     </div>
+    <button class="lg:hidden mx-6">Меню</button>
   </header>
 
   <div class="flex flex-col">
-    <p class="text-center text-gray my-4 font-bold text-2xl">О нас</p>
-    <div class="flex flex-row justify-around">
-      <div class="flex flex-col items-center w-1/3">
-        <p class="text-center my-4 text-xl text-gray">Информация о сервисе</p>
+    <p class="text-center text-gray-700 my-4 font-bold text-2xl">О нас</p>
+    <div class="flex flex-col lg:flex-row justify-around">
+      <div class="flex flex-col items-center w-full md:w-1/2 md:self-center lg:self-auto xl:w-1/3">
+        <p class="text-center my-4 text-xl text-gray-700">Информация о сервисе</p>
         <div class="bg-orange-400 rounded-lg m-2 p-4 text-white">
-          <p class="m-4"> Уникальный проект бесплатной помощи родителям в вопросах воспитания
+          <p class="m-3 xl:m-4"> Уникальный проект бесплатной помощи родителям в вопросах воспитания
             детей «Счастливая семья» стартовал в Подмосковье в августе 2019 года при поддержке министерства образования
             Московской области.
             Получить рекомендации педагогов и психологов жители региона могут в консультационных центрах, открытых в 46
             муниципалитетах.</p>
-          <p class="m-5">ЦЕЛИ: <br><br>
+          <p class="m-3 xl:m-5 hidden lg:block">ЦЕЛИ: <br><br>
 
             - Адаптация семьи группы риска в социуме.<br><br>
 
@@ -59,57 +60,56 @@
             - Профилактика жестокого обращения с детьми в семье.</p>
         </div>
       </div>
-      <div class="flex flex-col items-center">
-        <p class="text-center text-gray my-4 text-xl">Предоставляемые услуги</p>
-        <div class="bg-orange-400 rounded-lg m-2 p-4 text-white w-96">
+      <div class="flex flex-col items-center w-full lg:w-1/2">
+        <p class="text-center text-gray-700 my-4 text-xl">Предоставляемые услуги</p>
+        <div class="bg-orange-400 rounded-lg m-2 p-4 text-white w-64 sm:w-96">
           <img src="Assets/img/passport.png" class="rounded-3xl w-16" alt="">
           <p class="">Составление социального паспорта семьи</p>
         </div>
-        <div class="bg-orange-400 rounded-lg m-2 p-4 text-white w-96">
+        <div class="bg-orange-400 rounded-lg m-2 p-4 text-white w-64 sm:w-96">
           <img src="Assets/img/emodji.webp" class="rounded-3xl w-16" alt="">
           <p class="">Исследование эмоционального состояния членов семьи</p>
         </div>
-        <div class="bg-orange-400 rounded-lg m-2 p-4 text-white w-96">
+        <div class="bg-orange-400 rounded-lg m-2 p-4 text-white w-64 sm:w-96">
           <img src="Assets/img/bes.png" class="rounded-3xl w-16" alt="">
           <p class="">Индивидуальные беседы с детьми</p>
         </div>
-        <div class="bg-orange-400 rounded-lg m-2 p-4 text-white w-96">
+        <div class="bg-orange-400 rounded-lg m-2 p-4 text-white w-64 sm:w-96">
           <img src="Assets/img/pohod.png" class="rounded-3xl w-16" alt="">
           <p class="">Семейные походы выходного дня</p>
         </div>
       </div>
     </div>
-    <a href="#" class="bg-orange-400 rounded-lg text-white text-center w-64 self-center p-4">
-      <img src="" alt="">
+    <a href="#" class="bg-orange-400 rounded-lg text-white text-center w-64 self-center p-4 hover:text-gray-700 hover:lg:animate-bounce m-4">
       Записаться на курс
     </a>
   </div>
 
   <div class="flex flex-col">
-    <p class="text-center text-gray my-4 font-bold text-2xl">Возможности системы</p>
+    <p class="text-center text-gray-700 my-4 font-bold text-2xl">Возможности системы</p>
     <div class="flex flex-row justify-around">
 
     </div>
   </div>
   
-    <p class="text-center text-gray my-4 font-bold text-2xl">Отзывы</p>
+    <p class="text-center text-gray-700 my-4 font-bold text-2xl">Отзывы</p>
 <!-- This is an example component -->
-<div class="w-1/2 mx-auto">
+<div class="w-full lg:w-1/2 mx-auto">
 
 	<div id="default-carousel" class="relative" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold -translate-x-1/2 -translate-y-1/2 sm:text-3xl text-gray">Пример отзыва1</span>                
+                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold -translate-x-1/2 -translate-y-1/2 sm:text-3xl text-gray-700 text-center">Пример отзыва1</span>                
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold -translate-x-1/2 -translate-y-1/2 sm:text-3xl text-gray">Пример отзыва2</span>           
+                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold -translate-x-1/2 -translate-y-1/2 sm:text-3xl text-gray-700 text-center">Пример отзыва2</span>           
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold -translate-x-1/2 -translate-y-1/2 sm:text-3xl text-gray">Пример отзыва3</span>           
+                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold -translate-x-1/2 -translate-y-1/2 sm:text-3xl text-gray-700 text-center">Пример отзыва3</span>           
             </div>
         </div>
         <!-- Slider indicators -->
